@@ -45,7 +45,7 @@ body {
 }
 
 .footer-content ul li a:hover {
-    color: #f00; red 
+    color: #f00;
     background-color: rgba(255, 0, 0, 0.1);
 }
 
@@ -69,17 +69,21 @@ body {
     transform: scale(1.2);
 }
 
+
 .designA {
     background-color: #111;
 }
+
 
 .designB {
     background-color: #222;
 }
 
+
 .designC {
     background-color: #333;
 }
+
 
 .designD {
     background-color: #444;
@@ -89,72 +93,87 @@ body {
     background-color: #555;
 }
 
+
 .designF {
-    background-color: #666;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .designF .footer-logo img {
-    transition: transform 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .designF .footer-logo img:hover {
-    transform: rotate(360deg); 
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .designF .footer-content ul li a {
     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     overflow: hidden;
+    border: 2px solid #f00;
+    border-radius: 5px;
 }
 
 .designF .footer-content ul li a::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 2px;
+    width: 0;
+    height: 3px;
     background-color: #f00;
-    top: 0;
-    left: -100%;
-    transition: left 0.3s ease-in-out;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.4s, left 0.4s;
+    transform: translateX(-50%);
 }
 
 .designF .footer-content ul li a:hover::before {
+    width: 100%;
     left: 0;
 }
 
 .designG {
-    background-color: #777;
+    background-color: #333;
+    color: #fff;
+    position: relative;
 }
 
 .designG .footer-logo img {
-    transition: transform 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .designG .footer-logo img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .designG .footer-content ul li a {
     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     overflow: hidden;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #f00, #d00);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.4s;
 }
 
-.designG .footer-content ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #f00;
-    bottom: 0;
-    right: -100%;
-    transition: right 0.3s ease-in-out;
-}
-
-.designG .footer-content ul li a:hover::after {
-    right: 0;
+.designG .footer-content ul li a:hover {
+    background-position: 0 0;
 }
 
 .designH {
     background-color: #888;
+    position: relative;
 }
 
 .designH .footer-logo img {
@@ -162,12 +181,18 @@ body {
 }
 
 .designH .footer-logo img:hover {
-    filter: brightness(1.5); 
+    filter: brightness(1.5);
 }
 
 .designH .footer-content ul li a {
     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     overflow: hidden;
+    border: 2px solid #f00;
+    border-radius: 5px;
 }
 
 .designH .footer-content ul li a::before,
@@ -175,9 +200,9 @@ body {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 100%;
     background-color: #f00;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.4s;
 }
 
 .designH .footer-content ul li a::before {
@@ -200,63 +225,76 @@ body {
 }
 
 .designI .footer-logo img {
-    transition: transform 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .designI .footer-logo img:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .designI .footer-content ul li a {
     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .designI .footer-content ul li a::before {
     content: '';
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: 0;
     background-color: #f00;
-    top: -100%;
+    top: 100%;
     left: 0;
-    transition: top 0.3s ease-in-out;
+    transition: height 0.4s ease-in-out;
 }
 
 .designI .footer-content ul li a:hover::before {
-    top: 0;
+    height: 100%;
 }
 
 .designJ {
     background-color: #aaa;
+    position: relative;
 }
 
 .designJ .footer-logo img {
-    transition: transform 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .designJ .footer-logo img:hover {
-    transform: skewX(10deg); 
+    transform: skewX(10deg);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .designJ .footer-content ul li a {
     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .designJ .footer-content ul li a::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.2);
+    height: 0;
+    background-color: rgba(255, 0, 0, 0.3);
     top: 100%;
     left: 0;
-    transition: top 0.3s ease-in-out;
+    transition: height 0.4s ease-in-out;
 }
 
 .designJ .footer-content ul li a:hover::before {
-    top: 0;
+    height: 100%;
 }
 
 .goBack {
