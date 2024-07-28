@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -69,21 +68,17 @@ body {
     transform: scale(1.2);
 }
 
-
 .designA {
     background-color: #111;
 }
-
 
 .designB {
     background-color: #222;
 }
 
-
 .designC {
     background-color: #333;
 }
-
 
 .designD {
     background-color: #444;
@@ -93,9 +88,8 @@ body {
     background-color: #555;
 }
 
-
 .designF {
-    background-color: #111;
+    background-color: #000;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -107,7 +101,7 @@ body {
 
 .designF .footer-logo img:hover {
     transform: rotate(360deg);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
 .designF .footer-content ul li a {
@@ -119,27 +113,17 @@ body {
     overflow: hidden;
     border: 2px solid #f00;
     border-radius: 5px;
+    background: linear-gradient(45deg, #f00, #d00);
+    background-size: 200% 200%;
+    transition: background-position 0.4s;
 }
 
-.designF .footer-content ul li a::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background-color: #f00;
-    bottom: 0;
-    left: 50%;
-    transition: width 0.4s, left 0.4s;
-    transform: translateX(-50%);
-}
-
-.designF .footer-content ul li a:hover::before {
-    width: 100%;
-    left: 0;
+.designF .footer-content ul li a:hover {
+    background-position: 100% 100%;
 }
 
 .designG {
-    background-color: #333;
+    background-color: #444;
     color: #fff;
     position: relative;
 }
@@ -150,7 +134,7 @@ body {
 
 .designG .footer-logo img:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
 .designG .footer-content ul li a {
@@ -161,14 +145,14 @@ body {
     text-decoration: none;
     overflow: hidden;
     border-radius: 5px;
-    background: linear-gradient(90deg, #f00, #d00);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: background-position 0.4s;
+    background: #555;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.4s, background-color 0.4s;
 }
 
 .designG .footer-content ul li a:hover {
-    background-position: 0 0;
+    background-color: #666;
+    box-shadow: inset 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
 .designH {
@@ -177,11 +161,12 @@ body {
 }
 
 .designH .footer-logo img {
-    transition: filter 0.5s;
+    transition: filter 0.5s, transform 0.5s;
 }
 
 .designH .footer-logo img:hover {
     filter: brightness(1.5);
+    transform: scale(1.05);
 }
 
 .designH .footer-content ul li a {
@@ -193,35 +178,19 @@ body {
     overflow: hidden;
     border: 2px solid #f00;
     border-radius: 5px;
+    background: linear-gradient(to right, #f00, #d00);
+    background-size: 200% 100%;
+    transition: background-position 0.4s, box-shadow 0.4s;
 }
 
-.designH .footer-content ul li a::before,
-.designH .footer-content ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background-color: #f00;
-    transition: width 0.4s;
-}
-
-.designH .footer-content ul li a::before {
-    top: 0;
-    left: 0;
-}
-
-.designH .footer-content ul li a::after {
-    bottom: 0;
-    right: 0;
-}
-
-.designH .footer-content ul li a:hover::before,
-.designH .footer-content ul li a:hover::after {
-    width: 100%;
+.designH .footer-content ul li a:hover {
+    background-position: 0 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .designI {
     background-color: #999;
+    position: relative;
 }
 
 .designI .footer-logo img {
@@ -230,7 +199,7 @@ body {
 
 .designI .footer-logo img:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
 .designI .footer-content ul li a {
@@ -241,21 +210,24 @@ body {
     text-decoration: none;
     overflow: hidden;
     border-radius: 5px;
+    background: #888;
+    transition: background-color 0.4s;
 }
 
 .designI .footer-content ul li a::before {
     content: '';
     position: absolute;
     width: 2px;
-    height: 0;
+    height: 100%;
     background-color: #f00;
-    top: 100%;
     left: 0;
-    transition: height 0.4s ease-in-out;
+    top: 0;
+    transform: scaleY(0);
+    transition: transform 0.4s ease-in-out;
 }
 
 .designI .footer-content ul li a:hover::before {
-    height: 100%;
+    transform: scaleY(1);
 }
 
 .designJ {
@@ -269,7 +241,7 @@ body {
 
 .designJ .footer-logo img:hover {
     transform: skewX(10deg);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
 .designJ .footer-content ul li a {
@@ -280,6 +252,8 @@ body {
     text-decoration: none;
     overflow: hidden;
     border-radius: 5px;
+    background: linear-gradient(135deg, #f00, #d00);
+    transition: background-color 0.4s, transform 0.4s;
 }
 
 .designJ .footer-content ul li a::before {

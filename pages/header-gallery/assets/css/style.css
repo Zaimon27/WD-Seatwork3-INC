@@ -1,4 +1,4 @@
-
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -22,6 +22,7 @@ header {
   display: block;
 }
 
+/* Navigation Styles */
 nav ul {
   list-style: none;
   display: flex;
@@ -34,45 +35,127 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
-nav ul li a:hover {
-  color: #f00; 
-  background-color: rgba(255, 0, 0, 0.1);
-}
-
+/* Header Styles A to E (Static) */
 .headerA {
   background-color: #111;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headerA .logo img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.headerA .logo img:hover {
+  transform: scale(1.1);
+}
+
+.headerA nav ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.headerA nav ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .headerB {
   background-color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headerB .logo img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.headerB .logo img:hover {
+  filter: brightness(1.2);
+}
+
+.headerB nav ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.headerB nav ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .headerC {
   background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headerC .logo img {
+  transition: rotate 0.3s ease-in-out;
+}
+
+.headerC .logo img:hover {
+  transform: rotate(5deg);
+}
+
+.headerC nav ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.headerC nav ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .headerD {
   background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headerD .logo img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.headerD .logo img:hover {
+  transform: translateY(-5px);
+}
+
+.headerD nav ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.headerD nav ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .headerE {
   background-color: #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.headerE .logo img {
+  transition: filter 0.3s ease-in-out;
+}
 
+.headerE .logo img:hover {
+  filter: grayscale(100%);
+}
+
+.headerE nav ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.headerE nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Header Styles F to J (Animated) */
 .headerF {
   background-color: #666;
 }
 
 .headerF .logo img {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .headerF .logo img:hover {
   transform: rotate(360deg);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 .headerF nav ul li a {
@@ -86,32 +169,33 @@ nav ul li a:hover {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #f00;
+  background-color: #fff;
   top: 0;
   left: -100%;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.4s ease-in-out;
 }
 
 .headerF nav ul li a:hover::before {
   left: 0;
 }
 
+/* Header G */
 .headerG {
   background-color: #777;
 }
 
 .headerG .logo img {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .headerG .logo img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 .headerG nav ul li a {
   position: relative;
   overflow: hidden;
-  transition: color 0.3s, background-color 0.3s;
 }
 
 .headerG nav ul li a::after {
@@ -119,26 +203,28 @@ nav ul li a:hover {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #f00;
+  background-color: #fff;
   bottom: 0;
   right: -100%;
-  transition: right 0.3s ease-in-out;
+  transition: right 0.4s ease-in-out;
 }
 
 .headerG nav ul li a:hover::after {
   right: 0;
 }
 
+/* Header H */
 .headerH {
   background-color: #888;
 }
 
 .headerH .logo img {
-  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .headerH .logo img:hover {
-  filter: brightness(1.5); 
+  filter: brightness(1.5);
+  transform: rotate(5deg);
 }
 
 .headerH nav ul li a {
@@ -153,8 +239,8 @@ nav ul li a:hover {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #f00;
-  transition: width 0.3s ease-in-out;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out;
 }
 
 .headerH nav ul li a::before {
@@ -172,21 +258,23 @@ nav ul li a:hover {
   width: 100%;
 }
 
+/* Header I */
 .headerI {
   background-color: #999;
 }
 
 .headerI .logo img {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .headerI .logo img:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
 
 .headerI nav ul li a {
   position: relative;
   overflow: hidden;
-  transition: color 0.3s, background-color 0.3s;
 }
 
 .headerI nav ul li a::before {
@@ -194,26 +282,28 @@ nav ul li a:hover {
   position: absolute;
   width: 2px;
   height: 100%;
-  background-color: #f00;
+  background-color: #fff;
   top: -100%;
   left: 0;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .headerI nav ul li a:hover::before {
   top: 0;
 }
 
+/* Header J */
 .headerJ {
   background-color: #aaa;
 }
 
 .headerJ .logo img {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .headerJ .logo img:hover {
   transform: skewX(10deg);
+  filter: brightness(1.1);
 }
 
 .headerJ nav ul li a {
@@ -226,17 +316,16 @@ nav ul li a:hover {
   content: '';
   position: absolute;
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 0, 0, 0.2);
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5); /* Subtle white line effect */
   top: 100%;
   left: 0;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .headerJ nav ul li a:hover::before {
   top: 0;
 }
-
 
 .goBack {
   display: flex;
