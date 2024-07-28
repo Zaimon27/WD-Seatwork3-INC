@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -22,7 +22,6 @@ header {
   display: block;
 }
 
-/* Navigation Styles */
 nav ul {
   list-style: none;
   display: flex;
@@ -38,26 +37,9 @@ nav ul li a {
   transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
-/* Header Styles A to E (Static) */
 .headerA {
   background-color: #111;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.headerA .logo img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.headerA .logo img:hover {
-  transform: scale(1.1);
-}
-
-.headerA nav ul li a {
-  border-bottom: 2px solid transparent;
-}
-
-.headerA nav ul li a:hover {
-  border-bottom: 2px solid #fff;
 }
 
 .headerB {
@@ -65,41 +47,9 @@ nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.headerB .logo img {
-  transition: filter 0.3s ease-in-out;
-}
-
-.headerB .logo img:hover {
-  filter: brightness(1.2);
-}
-
-.headerB nav ul li a {
-  border-bottom: 2px solid transparent;
-}
-
-.headerB nav ul li a:hover {
-  border-bottom: 2px solid #fff;
-}
-
 .headerC {
   background-color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.headerC .logo img {
-  transition: rotate 0.3s ease-in-out;
-}
-
-.headerC .logo img:hover {
-  transform: rotate(5deg);
-}
-
-.headerC nav ul li a {
-  border-bottom: 2px solid transparent;
-}
-
-.headerC nav ul li a:hover {
-  border-bottom: 2px solid #fff;
 }
 
 .headerD {
@@ -107,44 +57,51 @@ nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.headerD .logo img {
+.headerE {
+  background-color: #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headerA .logo img, .headerB .logo img, .headerC .logo img, .headerD .logo img, .headerE .logo img {
   transition: transform 0.3s ease-in-out;
+}
+
+.headerA .logo img:hover {
+  transform: scale(1.1);
+}
+
+.headerB .logo img:hover {
+  filter: brightness(1.2);
+}
+
+.headerC .logo img:hover {
+  transform: rotate(5deg);
 }
 
 .headerD .logo img:hover {
   transform: translateY(-5px);
 }
 
-.headerD nav ul li a {
-  border-bottom: 2px solid transparent;
-}
-
-.headerD nav ul li a:hover {
-  border-bottom: 2px solid #fff;
-}
-
-.headerE {
-  background-color: #555;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.headerE .logo img {
-  transition: filter 0.3s ease-in-out;
-}
-
 .headerE .logo img:hover {
   filter: grayscale(100%);
 }
 
+.headerA nav ul li a,
+.headerB nav ul li a,
+.headerC nav ul li a,
+.headerD nav ul li a,
 .headerE nav ul li a {
   border-bottom: 2px solid transparent;
 }
 
+.headerA nav ul li a:hover,
+.headerB nav ul li a:hover,
+.headerC nav ul li a:hover,
+.headerD nav ul li a:hover,
 .headerE nav ul li a:hover {
   border-bottom: 2px solid #fff;
 }
 
-/* Header Styles F to J (Animated) */
 .headerF {
   background-color: #666;
 }
@@ -155,7 +112,7 @@ nav ul li a {
 
 .headerF .logo img:hover {
   transform: rotate(360deg);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
 }
 
 .headerF nav ul li a {
@@ -169,7 +126,7 @@ nav ul li a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #f00;
   top: 0;
   left: -100%;
   transition: left 0.4s ease-in-out;
@@ -179,7 +136,6 @@ nav ul li a {
   left: 0;
 }
 
-/* Header G */
 .headerG {
   background-color: #777;
 }
@@ -203,7 +159,7 @@ nav ul li a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #f00;
   bottom: 0;
   right: -100%;
   transition: right 0.4s ease-in-out;
@@ -213,7 +169,6 @@ nav ul li a {
   right: 0;
 }
 
-/* Header H */
 .headerH {
   background-color: #888;
 }
@@ -239,7 +194,7 @@ nav ul li a {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #f00;
   transition: width 0.4s ease-in-out;
 }
 
@@ -258,7 +213,6 @@ nav ul li a {
   width: 100%;
 }
 
-/* Header I */
 .headerI {
   background-color: #999;
 }
@@ -282,7 +236,7 @@ nav ul li a {
   position: absolute;
   width: 2px;
   height: 100%;
-  background-color: #fff;
+  background-color: #f00;
   top: -100%;
   left: 0;
   transition: top 0.4s ease-in-out;
@@ -292,7 +246,6 @@ nav ul li a {
   top: 0;
 }
 
-/* Header J */
 .headerJ {
   background-color: #aaa;
 }
@@ -317,7 +270,7 @@ nav ul li a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.5); /* Subtle white line effect */
+  background-color: rgba(255, 0, 0, 0.5);
   top: 100%;
   left: 0;
   transition: top 0.4s ease-in-out;
