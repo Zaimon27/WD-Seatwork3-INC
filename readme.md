@@ -16,7 +16,7 @@ This repository is to show the different design of header and footer
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
+<!-- TODO: Change the zyx-0314 into your github username  --> 
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=https://github.com/Zaimon27/WD-Seatwork-3-Eustaquio)
 
@@ -62,6 +62,7 @@ The purpose of this acitivities is to show your skills for making a different st
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website
+- Transition
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -107,5 +108,5 @@ WD-Seatwork3
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Ferrari logo | used for the ferarri logo  footer design|https://ph.pinterest.com/pin/556757572669864134/ |
-|  Mercedes Logo | used the mercedes logo for header design |https://www.hiclipart.com/free-transparent-background-png-clipart-iscmq |
+| Iron man Logo | used for the logo of the ironman design for footer and header|https://cults3d.com/en/3d-model/various/llavero-logo-iron-man |
+|  Captain Marvel Logo | used for the logo of the captain marvel design for footer and header |https://www.designyourway.net/blog/captain-marvel-logo/ |
